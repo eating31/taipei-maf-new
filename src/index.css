@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,43 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+/* svg map */
+svg .map {
+  height: 100vh;
+  /* width: 100%; */
+}
+path.map{
+  stroke: #959595;
+  fill: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+path.map:hover {
+  fill: #2f6690;
+  transform: translate(-5px, -5px);
+}
+
+
+/* activity style */
+.card {
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* news style */
+.newsPointer:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+mark {
+  background-color: transparent;
+  padding: 2px 1px;
+  border-radius: 5px; 
 }
