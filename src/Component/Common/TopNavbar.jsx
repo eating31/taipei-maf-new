@@ -75,12 +75,16 @@ function TopNavbar() {
                     <Navbar.Collapse>
                         <Nav className="my-2 ms-auto fs-5 px-3">
                             <NavDropdown title="關於本會" className='px-3'>
-                                <NavDropdown.Item href="/about/理事長簡介">理事長簡介</NavDropdown.Item>
-                                <NavDropdown.Item href="/about/本會簡介">本會簡介</NavDropdown.Item>
-                                <NavDropdown.Item href="/about/理監事簡介">理監事簡介</NavDropdown.Item>
-                                <NavDropdown.Item href="/about/會務人員">會務人員</NavDropdown.Item>
+                                <NavDropdown.Item href="/about/體總簡介">體總簡介</NavDropdown.Item>
+                                <NavDropdown.Item href="/about/會長簡介">會長簡介</NavDropdown.Item>
+                                
+                                <NavDropdown title="體總組織" drop='end' className='ps-sm-2 ps-3'>
+                                    <Dropdown.Item href="/about/體總組織/副會長">副會長</Dropdown.Item>
+                                    <Dropdown.Item href="/about/體總組織/理監事">理監事</Dropdown.Item>
+                                    <Dropdown.Item href="/about/體總組織/顧問群">顧問群</Dropdown.Item>
+                                    <Dropdown.Item href="/about/體總組織/幹事部">幹事部</Dropdown.Item>
+                                </NavDropdown>
                                 <NavDropdown.Item href="/about/組織章程">組織章程</NavDropdown.Item>
-                                <NavDropdown.Item href="/about/會議記錄">會議記錄</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="/download" className='px-3'>檔案下載</Nav.Link>
                             <Nav.Link href="/news" className='px-3'>訊息公告</Nav.Link>

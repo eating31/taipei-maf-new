@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Alert, Modal, Form, Spinner, Image, Button, Row, Col } from 'react-bootstrap';
 import Finder from '../../API/Finder'
-import { enqueueSnackbar } from 'notistack';
+import { SnackbarProvider, enqueueSnackbar } from 'notistack';
 import { Context } from '../../Contexts/Context';
 
 import '@wangeditor/editor/dist/css/style.css'
@@ -67,7 +67,7 @@ function CreateModal({ show, handle }) {
     const [allType, setAllType] = useState([])
 
     const [isCreate, setIsCreate] = useState(false)
-    const { manageAllNews, setManageAllNews } = useContext(Context)
+    const { setManageAllActivity } = useContext(Context)
     const [photo, setPhoto] = useState([])
 
     function handleCreated() {
@@ -111,13 +111,14 @@ function CreateModal({ show, handle }) {
                         enqueueSnackbar('活動建立失敗! 只有管理員可以新增活動', { variant: 'error' })
                         return;
                     }
+                    console.log(data.data)
                     enqueueSnackbar('活動建立成功!', { variant: 'success' })
                     setDescription('')
                     setTitle('')
                     setIsPinned(false)
                     setMessage({ message: data.data.message, variant: 'success' })
                     handle()
-                    setManageAllNews(prev => [data.data.savedNews, ...prev]);
+                    setManageAllActivity(prev => [data.data.savedNews, ...prev]);
                 })
                 .catch(err => {
                     // if(err.message === "Request failed with status code 400" ){
@@ -357,6 +358,7 @@ function CreateModal({ show, handle }) {
 
                 </Modal.Footer>
             </Modal>
+            <SnackbarProvider />
         </>
     )
 }

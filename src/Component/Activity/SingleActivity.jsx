@@ -67,7 +67,7 @@ function SingleActivity({ }) {
                         {allNews.map((each, index) => {
                             if (each._id === id) {
                                 return (
-                                    <>
+                                    <div key={index}>
                                         <Button className='mt-3' variant="" style={{ textDecoration: 'none' }} onClick={() => navigate('/activity')}> {'<'} 返回</Button>
 
                                         <div className='d-flex justify-content-between py-3'>
@@ -105,7 +105,7 @@ function SingleActivity({ }) {
                                             }
                                         </div>
 
-                                    </>
+                                    </div>
                                 )
                             }
                         })}

@@ -36,6 +36,7 @@ function App() {
             {/* <Route path="/" element={isLogin ? <Navigate to="/backend/manage" />:<Navigate to="/login" />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/about/:title" element={<About />} />
+            <Route path="/about/:title/:subTitle" element={<About />} />
             <Route path="/download" element={<Download />} />
             <Route path="/news" element={<News />} />
             <Route path="/news/:id" element={<SingleNew />} />

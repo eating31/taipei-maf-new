@@ -87,9 +87,9 @@ function AllActivity({ allActivity }) {
                                                 return (
                                                     <Carousel.Item key={path}>
                                                         {path && process.env.REACT_APP_STATIC === 'true' ?
-                                                            <Card.Img className='p-2 pb-0' variant="top" src={path} fluid style={{ height: '300px', objectFit: 'cover' }} />
+                                                            <Card.Img className='p-2 pb-0' variant="top" src={path} fluid={true} style={{ height: '300px', objectFit: 'cover' }} />
                                                             :
-                                                            <Card.Img src={process.env.REACT_APP_BACKEND_URL + path} fluid className='p-2 pb-0' variant="top" style={{ height: '300px', objectFit: 'cover' }} />
+                                                            <Card.Img src={process.env.REACT_APP_BACKEND_URL + path} fluid={true} className='p-2 pb-0' variant="top" style={{ height: '300px', objectFit: 'cover' }} />
                                                         }
                                                     </Carousel.Item>
                                                 )
@@ -97,7 +97,7 @@ function AllActivity({ allActivity }) {
                                         }
                                     </Carousel>
                                     :
-                                    <Card.Img className='p-2 pb-0' variant="top" src={defaultPhoto} fluid style={{ height: '300px', objectFit: 'cover' }} />
+                                    <Card.Img className='p-2 pb-0' variant="top" src={defaultPhoto} fluid={true} style={{ height: '300px', objectFit: 'cover' }} />
 
                                 }
                                 <Card.Body>

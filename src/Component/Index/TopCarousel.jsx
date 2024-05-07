@@ -1,41 +1,38 @@
 import React, { useState } from 'react'
-import{Image, Carousel} from 'react-bootstrap';
-import ExampleCarouselImage from '../../Image/test.jpg';
+import { Image, Carousel } from 'react-bootstrap';
+//import ExampleCarouselImage from '../../Image/test.jpg';
+import Banner from '../../Image/banner (1).jpg';
+import Banner2 from '../../Image/banner (2).jpg';
+import Banner3 from '../../Image/banner (3).jpg';
+import Banner4 from '../../Image/banner (4).jpg';
+import Banner5 from '../../Image/banner (5).jpg';
 
 function TopCarousel() {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
-    const handleSelect = (selectedIndex) => {
-      setIndex(selectedIndex);
-    };
-  
-    return (
-      <Carousel activeIndex={index} onSelect={handleSelect} >
-        <Carousel.Item>
-          <Image src={ExampleCarouselImage} text="First slide" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <Image src={ExampleCarouselImage} text="Second slide" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <Image src={ExampleCarouselImage}text="Third slide" style={{ objectFit: 'cover', width: '100%', height: '100%' }}/>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    );
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}  style={{'height': '100vh'}}>
+      <Carousel.Item>
+        <Image src={Banner} text="First slide" style={{ objectFit: 'cover', width: '100%', height: '100vh' }} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Image src={Banner2} text="Second slide" style={{ objectFit: 'cover', width: '100%', height: '100vh' }} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Image src={Banner3} text="Third slide" style={{ objectFit: 'cover', width: '100%', height: '100vh' }} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Image src={Banner4} text="Third slide" style={{ objectFit: 'cover', width: '100%', height: '100vh' }} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Image src={Banner5} text="Third slide" style={{ objectFit: 'cover', width: '100%', height: '100vh'}} />
+      </Carousel.Item>
+    </Carousel>
+  );
 }
 
 export default TopCarousel
