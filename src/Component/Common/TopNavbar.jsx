@@ -78,7 +78,7 @@ function TopNavbar() {
                                 <NavDropdown.Item href="/about/體總簡介">體總簡介</NavDropdown.Item>
                                 <NavDropdown.Item href="/about/會長簡介">會長簡介</NavDropdown.Item>
                                 
-                                <NavDropdown title="體總組織" drop='end' className='ps-sm-2 ps-3'>
+                                <NavDropdown active title="體總組織" drop='end' className='ps-sm-2 ps-3'>
                                     <Dropdown.Item href="/about/體總組織/副會長">副會長</Dropdown.Item>
                                     <Dropdown.Item href="/about/體總組織/理監事">理監事</Dropdown.Item>
                                     <Dropdown.Item href="/about/體總組織/顧問群">顧問群</Dropdown.Item>
@@ -90,7 +90,7 @@ function TopNavbar() {
                             <Nav.Link href="/news" className='px-3'>訊息公告</Nav.Link>
                             <Nav.Link href="/activity" className='px-3'>最新活動</Nav.Link>
                             <NavDropdown title="相關資源" className='px-3'>
-                                <NavDropdown title="體育會" drop='end' className='ps-sm-2 ps-3'>
+                                <NavDropdown active title="臺北市各區體育會" drop='end' className='ps-sm-2 px-3'>
                                     <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
                                     <Dropdown.Item href="#action8">子選單項目2</Dropdown.Item>
                                     <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
@@ -104,22 +104,22 @@ function TopNavbar() {
                                     <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
                                     <Dropdown.Item href="#action8">子選單項目2</Dropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown title="運動中心" drop='end' className='ps-sm-2 ps-3'>
-                                    <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
-                                    <Dropdown.Item href="#action8">子選單項目2</Dropdown.Item>
-                                    <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
-                                    <Dropdown.Item href="#action8">子選單項目2</Dropdown.Item>
-                                    <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
-                                    <Dropdown.Item href="#action8">子選單項目2</Dropdown.Item>
-                                    <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
-                                    <Dropdown.Item href="#action8">子選單項目2</Dropdown.Item>
-                                    <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
-                                    <Dropdown.Item href="#action8">子選單項目2</Dropdown.Item>
-                                    <Dropdown.Item href="#action7">子選單項目1</Dropdown.Item>
-                                    <Dropdown.Item href="#action8">子選單項目2</Dropdown.Item>
+                                <NavDropdown active title="臺北市各運動中心" drop='end' className='ps-sm-2 ps-3'>
+                                    <Dropdown.Item href="#action7">松山區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action8">信義區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action7">大安區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action8">中山區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action7">中正區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action8">大同區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action7">萬華區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action8">文山區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action7">南港區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action8">內湖區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action7">士林區運動中心</Dropdown.Item>
+                                    <Dropdown.Item href="#action8">北投區運動中心</Dropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown.Item href="/source/協會">協會</NavDropdown.Item>
-                                <NavDropdown.Item href="/source/委員會">委員會</NavDropdown.Item>
+                                <NavDropdown.Item href="/source/協會">本會各單項協會</NavDropdown.Item>
+                                <NavDropdown.Item href="/source/委員會">本會各單項委員會</NavDropdown.Item>
 
                             </NavDropdown>
                             <Nav.Link className='px-3' target="_blank" href="https://www.facebook.com/profile.php?id=100094196177790" >
