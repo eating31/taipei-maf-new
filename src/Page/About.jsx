@@ -122,14 +122,14 @@ function About() {
               )}
 
               {selectedTitle === '會長簡介' && (
-                <div className='p-5'>
+                <div className='p-sm-5 p-3'>
                   <h2>{selectedTitle}</h2>
                   <div className='fs-4 py-2'>
                     第十七屆 會長 : 葉林傳
                   </div>
-                  <div className='fs-5 px-5'>
+                  <div className='fs-5 px-sm-5 px-0'>
                     <p>現職 :</p>
-                    <div className='px-4'>
+                    <div className='px-sm-4 ps-2'>
                       <ul>
                         <li>臺北市中山區圓山里 里長</li>
                         <li>臺北市大同區體育會 理事長</li>
@@ -149,11 +149,11 @@ function About() {
               )}
 
               {selectedTitle === '體總組織' &&
-                <div className='p-5'>
+               <div className='p-sm-5 p-3'>
                   <h2>{selectedTitle}</h2>
 
                   {selectedSubTitle === '副會長' &&
-                    <div className='px-5'>
+                    <div className='px-sm-5 ps-3'>
                       <div className='fs-4 py-2'>
                         榮譽會長 : 呂威震
                       </div>
@@ -164,7 +164,7 @@ function About() {
                   }
 
                   {selectedSubTitle === '理監事' &&
-                    <div className='px-5'>
+                    <div className='px-sm-5 ps-3'>
                       <div className='fs-4 py-2'>
                         常務理事 : 汪志冰、郭昭巖、廖美娥
                       </div>
@@ -181,7 +181,7 @@ function About() {
                   }
 
                   {selectedSubTitle === '顧問群' &&
-                    <div className='px-5'>
+                    <div className='px-sm-5 ps-3'>
                       <div className='fs-4 py-2'>
                         顧問群 : 李招譽、陳彥伯、彭臺臨、楊萬賀
                       </div>
@@ -189,7 +189,7 @@ function About() {
                   }
 
                   {selectedSubTitle === '幹事部' &&
-                    <div className='px-5'>
+                    <div className='px-sm-5 ps-3'>
                       <div className='fs-4 py-2'>
                         臺北市體育總會 秘書長 : 陳芊妤
                       </div>
