@@ -52,7 +52,13 @@ const Finder = () => {
             else if(error.message === 'Request failed with status code 403'){
                 setConnectedMessage('權限錯誤!');
                 setIsConnected(false);
-            }else {
+            }else if(error.response.status === 401){
+                alert('請重新登入')
+                localStorage.removeItem('name')
+                localStorage.removeItem('token')
+                window.location.assign('/')
+            }
+            else{
                 // 其他错误
                 return Promise.reject(error);
             }

@@ -38,7 +38,8 @@ function Profile() {
         setPhone(data.data.data.phone)
         setAddress(data.data.data.address)
         setRole(data.data.role)
-      }).catch(err => console.log(err))
+      }).catch(err => console.log(err)
+      )
 
     }
 
